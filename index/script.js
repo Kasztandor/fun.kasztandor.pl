@@ -6,7 +6,7 @@ fetch("games.json")
     Object.entries(infos).forEach(element=>
     {
         let el = element[1]
-        inner += `<div><h1>${el.name}</h1><span>${el.description}</span></div>`
+        inner += `<div onclick="window.location.href='${element[0]}'" style="${el.color?"--color:"+el.color+";":""}${el.bgcolor?"--bgcolor:"+el.bgcolor+";":""}"><h1>${el.name}</h1><span>${el.description}</span></div>`
     })
     document.querySelector("main").innerHTML = inner
 })

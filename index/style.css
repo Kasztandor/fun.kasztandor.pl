@@ -1,3 +1,7 @@
+:root{
+    --color: black;
+    --bgcolor: gray;
+}
 body{
     margin: 0;
     padding: 0;
@@ -27,14 +31,17 @@ main{
     }
 }
 main > div{
+    color: var(--color);
+    background-color: var(--bgcolor);
     position: relative;
-    background-color: gray;
     padding: 15px;
     margin: 5px;
     border-radius: 15px;
     height: 150px;
     border: 5px solid black;
     overflow: hidden;
+    cursor: pointer;
+    user-select: none;
 }
 main > div > h1{
     position: absolute;
