@@ -15,12 +15,14 @@ nav{
     color: white;
     background-color: black;
     padding: 10px 60px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 main{
+    min-height: calc(100vh - 130px);
     padding: 10px 60px;
     display: grid;
     grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
@@ -70,4 +72,19 @@ main > div:hover > h1{
 main > div:hover > span{
     top: 45px;
     line-height: 20px;
+}
+footer{
+    height: 20px;
+    width: calc(100% - 120px);
+    padding: 10px 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer a, footer a:visited{
+    color: blue;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
 }
