@@ -1,0 +1,15 @@
+K  - King
+Q  - Queen
+R  - Rook
+B  - Bishop
+Kt - Knight
+P  - Pawn
+
+[mp("R","white"),mp("P","white"),"","","","",mp("P","black"),mp("R","black")],   //A (0)
+[mp("Kt","white"),mp("P","white"),"","","","",mp("P","black"),mp("Kt","black")], //B (1)
+[mp("B","white"),mp("P","white"),"","","","",mp("P","black"),mp("B","black")],   //C (2)
+[mp("Q","white"),mp("P","white"),"","","","",mp("P","black"),mp("Q","black")],   //D (3)
+[mp("K","white"),mp("P","white"),"","","","",mp("P","black"),mp("K","black")],   //E (4)
+[mp("B","white"),mp("P","white"),"","","","",mp("P","black"),mp("B","black")],   //F (5)
+[mp("Kt","white"),mp("P","white"),"","","","",mp("P","black"),mp("Kt","black")], //G (6)
+[mp("R","white"),mp("P","white"),"","","","",mp("P","black"),mp("R","black")]    //H (7)

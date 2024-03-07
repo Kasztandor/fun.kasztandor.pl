@@ -1,0 +1,42 @@
+body{
+	background-color: lightblue;
+}
+#board {
+}
+.white {
+	background-color: white;
+}
+.black {
+	background-color: green;
+}
+.white, .black {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	float: left;
+}
+.black.selected {
+	background-color: darkgreen;
+}
+.white.selected {
+	background-color: lightgray;
+}
+.white img, .black img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.black .sign {
+	color: white;
+}
+.white .sign {
+	color: green;
+}
+.sign {
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+	font-weight: bold;
+}
