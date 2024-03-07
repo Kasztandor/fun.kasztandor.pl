@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const cors = require('cors');
 
 const app = express();
 
@@ -16,6 +17,7 @@ fs.readdirSync(path.join(__dirname, 'games')).forEach(file => {
     }
   }
 })
+app.use(cors());
 app.get('/games.json', (req, res) => {
   res.json(JSON.stringify(games));
 });

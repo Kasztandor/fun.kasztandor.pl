@@ -24,15 +24,17 @@ nav{
 main{
     min-height: calc(100vh - 130px);
     padding: 10px 60px;
+}
+#games{
     display: grid;
     grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
 }
 @media (max-width: 768px){
-    main{
+    #games{
         grid-template-columns: 100%;
     }
 }
-main > div{
+#games > div{
     color: var(--color);
     background-color: var(--bgcolor);
     position: relative;
@@ -45,7 +47,7 @@ main > div{
     cursor: pointer;
     user-select: none;
 }
-main > div > h1{
+#games > div > h1{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,7 +55,7 @@ main > div > h1{
     font-size: 40px;
     transition: .5s;
 }
-main > div > span{
+#games > div > span{
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
@@ -63,13 +65,13 @@ main > div > span{
     transition: .5s;
     line-height: 0px;
 }
-main > div:hover > h1{
+#games > div:hover > h1{
     top: 5px;
     left: 15px;
     font-size: 30px;
     transform: translate(0, 0);
 }
-main > div:hover > span{
+#games > div:hover > span{
     top: 45px;
     line-height: 20px;
 }
