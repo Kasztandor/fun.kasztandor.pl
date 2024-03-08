@@ -2,6 +2,12 @@
     --color: black;
     --bgcolor: gray;
 }
+.pc .platform-mobile{
+    display: none;
+}
+.mobile .platform-pc{
+    display: none;
+}
 body{
     margin: 0;
     padding: 0;
@@ -35,12 +41,6 @@ main{
     }
     main{
         padding: 10px 10px;
-    }
-    .pc .platform-mobile{
-        display: none;
-    }
-    .mobile .platform-pc{
-        display: none;
     }
 }
 #games > div{
