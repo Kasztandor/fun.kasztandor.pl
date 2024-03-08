@@ -33,6 +33,15 @@ main{
     #games{
         grid-template-columns: 100%;
     }
+    main{
+        padding: 10px 10px;
+    }
+    .pc .platform-mobile{
+        display: none;
+    }
+    .mobile .platform-pc{
+        display: none;
+    }
 }
 #games > div{
     color: var(--color);
